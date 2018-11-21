@@ -1,0 +1,14 @@
+{
+  "name": "Vault Door 4",
+  "description": "This vault uses ASCII encoding for the password.\n\nThe source code for this vault is here: {{url_for(\"VaultDoor4.java\")}}",
+  "version": "0.1.0",
+  "author": "Mark E. Haase",
+  "organization": "Semisuper Inc",
+  "score" : 40,
+  "category": "Java Code Review",
+  "hints": [
+    "You can compile the source code and run it on your own computer.",
+    "Use a search engine to find an \"ASCII table\".",
+    "You will also need to know the difference between octal, decimal, and hexademical numbers."
+  ]
+}

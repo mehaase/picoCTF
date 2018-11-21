@@ -1,0 +1,9 @@
+{
+  "name": "Java Source Review",
+  "author": "Mark E. Haase",
+  "description": "Challenges based on reading and understanding Java code.",
+  "categories": ["Java Source Review"],
+  "problems": ["jsr1"],
+  "dependencies": {    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Vault Door 5",
+  "description": "This vault uses a simple XOR encryption scheme.\n\nThe source code for this vault is here: {{url_for(\"VaultDoor5.java\")}}",
+  "version": "0.1.0",
+  "author": "Mark E. Haase",
+  "organization": "Semisuper Inc",
+  "score" : 40,
+  "category": "Java Code Review",
+  "hints": [
+    "You can compile the source code and run it on your own computer.",
+    "If X ^ Y = Z, then Z ^ Y = X. Write a program that uses this fact."
+  ]
+}
