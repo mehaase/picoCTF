@@ -1,0 +1,14 @@
+{
+  "name": "Vault Door 9",
+  "description": "Earlier doors used various types of encoding to try to conceal the password, but this door uses really strong encryption! Specifically, this door uses a symmetric cipher called AES, an acronym that means \"Advanced Encryption Standard\". This cryptography is used by millions of people every day for things like online shopping, and it is even used by governments and militaries!\n\nAES encryption is practically unbreakable unless you know the secret key that is used to encrypt the data. In this case, the vault password is encrypted with a 4-digit numeric pin. None of our double agents have been able to obtain the sercret pin number. Identify the secret pin and obtain the password (you should only submit the password) for this vault door, and we will finally be able to retrieve the blueprints for his Doomsday Project. You are our last chance, special agent!\n\nThe source code for this vault is here: {{url_for(\"VaultDoor9.java\")}}",
+  "version": "1.0.0",
+  "author": "Mark E. Haase",
+  "organization": "Semisuper Inc",
+  "score" : 40,
+  "category": "Java Code Review",
+  "hints": [
+    "Decrypting AES is extremely tedious to perform by hand. Write a function that can decrypt an array of bytes given a 4 digit pin.",
+    "The AES encryption used in this vault door is virtually impossible to crack without the secret key. There are exactly ten thousand 4-digit pin numbers. Can you write a program that tries every single one?",
+    "If you decrypt with the wrong pin, you will get gibberish as output that does not look like a valid password. Can you devise a way to test if the result of decryption looks like a flag?"
+  ]
+}

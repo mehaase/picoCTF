@@ -1,3 +1,4 @@
+import java.net.URLDecoder;
 import java.util.*;
 
 class VaultDoor5 {
@@ -13,22 +14,24 @@ class VaultDoor5 {
         }
     }
 
+    public String base64Encode(byte[] input) {
+        return Base64.getEncoder().encodeToString(input);
+    }
+
+    public String urlEncode(byte[] input) {
+        StringBuffer buf = new StringBuffer();
+        for (int i=0; i<input.length; i++) {
+            buf.append(String.format("%%%2x", input[i]));
+        }
+        return buf.toString();
+    }
+
     public boolean checkPassword(String password) {
-        if (password.length() != 32) {
-            return false;
-        }
-        byte[] passBytes = password.getBytes();
-        byte[] myBytes = {
-            {{', '.join(b[:8])}},
-            {{', '.join(b[8:16])}},
-            {{', '.join(b[16:24])}},
-            {{', '.join(b[24:])}},
-        };
-        for (int i=0; i<32; i++) {
-            if (((passBytes[i] ^ 0x55) - myBytes[i]) != 0) {
-                return false;
-            }
-        }
-        return true;
+        String urlEncoded = urlEncode(password.getBytes());
+        String base64Encoded = base64Encode(urlEncoded.getBytes());
+        String expected = "{{b[  :44]}}"
+                        + "{{b[44:88]}}"
+                        + "{{b[88:  ]}}";
+        return base64Encoded.equals(expected);
     }
 }

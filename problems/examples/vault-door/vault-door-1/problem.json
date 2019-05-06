@@ -1,13 +1,12 @@
 {
   "name": "Vault Door 1",
   "description": "This vault uses some complicated arrays! I hope you can make sense of it, special agent.\n\nThe source code for this vault is here: {{url_for(\"VaultDoor1.java\")}}",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Mark E. Haase",
   "organization": "Semisuper Inc",
   "score" : 40,
   "category": "Java Code Review",
   "hints": [
-    "You can compile the source code and run it on your own computer.",
     "Look up the charAt() method online."
   ]
 }

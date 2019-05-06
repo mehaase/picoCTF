@@ -1,13 +1,12 @@
 {
   "name": "Vault Door 3",
   "description": "This vault uses for-loops and byte arrays.\n\nThe source code for this vault is here: {{url_for(\"VaultDoor3.java\")}}",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Mark E. Haase",
   "organization": "Semisuper Inc",
   "score" : 40,
   "category": "Java Code Review",
   "hints": [
-    "You can compile the source code and run it on your own computer.",
     "Make a table that contains each value of the loop variables and the corresponding buffer index that it writes to."
   ]
 }
