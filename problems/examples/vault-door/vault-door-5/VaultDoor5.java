@@ -14,10 +14,21 @@ class VaultDoor5 {
         }
     }
 
+    // Minion #7781 used base 8 and base 16, but this is base 64, which is
+    // like... eight times stronger, right? Riiigghtt? Well that's what my twin
+    // brother Minion #2415 says, anyway.
+    //
+    // -Minion #2414
     public String base64Encode(byte[] input) {
         return Base64.getEncoder().encodeToString(input);
     }
 
+    // URL encoding is meant for web pages, so any double agent spies who steal
+    // our source code will think this is a web site or something, defintely not
+    // vault door! Oh wait, should I have not said that in a source code
+    // comment?
+    //
+    // -Minion #2415
     public String urlEncode(byte[] input) {
         StringBuffer buf = new StringBuffer();
         for (int i=0; i<input.length; i++) {

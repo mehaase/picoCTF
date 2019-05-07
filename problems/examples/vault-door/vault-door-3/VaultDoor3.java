@@ -13,6 +13,12 @@ class VaultDoor3 {
         }
     }
 
+    // Our security monitoring team has noticed some intrusions on some of the
+    // less secure doors. Dr. Evil has asked me specifically to build a stronger
+    // vault door to protect his Doomsday plans. I just *know* this door will
+    // keep all of those nosy agents out of our business. Mwa ha!
+    //
+    // -Minion #2671
     public boolean checkPassword(String password) {
         if (password.length() != 32) {
             return false;

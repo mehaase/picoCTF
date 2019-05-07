@@ -13,6 +13,13 @@ class VaultDoor6 {
         }
     }
 
+    // Dr. Evil gave me a book called Applied Cryptography by Bruce Schneier,
+    // and I learned this really cool encryption system. This will be the
+    // strongest vault door in Dr. Evil's entire evil volcano compound for sure!
+    // Well, I didn't exactly read the *whole* book, but I'm sure there's
+    // nothing important in the last 750 pages.
+    //
+    // -Minion #3091
     public boolean checkPassword(String password) {
         if (password.length() != 32) {
             return false;

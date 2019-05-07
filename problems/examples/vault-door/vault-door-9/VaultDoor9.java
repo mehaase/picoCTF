@@ -24,6 +24,8 @@ class VaultDoor9 {
     // The key is 16 bytes. The digits of the pin number are
     // stored in the first 4 bytes, and the other 12 bytes are
     // zeroes.
+    //
+    // - Minion #0027
     public byte[] pinToKey(String pin) {
         byte[] key = new byte[16];
         for (int i = 0; i < 4; i++) {

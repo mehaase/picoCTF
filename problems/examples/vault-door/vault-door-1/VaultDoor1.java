@@ -13,6 +13,11 @@ class VaultDoor1 {
         }
     }
 
+    // I came up with a more secure way to check the password without putting
+    // the password itself in the source code. I think this is going to be
+    // UNHACKABLE!! I hope Dr. Evil agrees...
+    //
+    // -Minion #8728
     public boolean checkPassword(String password) {
         return password.length() == 32 &&
                password.charAt(0)  == '{{flag[0]}}' &&

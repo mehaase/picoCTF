@@ -13,6 +13,11 @@ class VaultDoor2 {
         }
     }
 
+    // Minion #8728 obviously does not know how to write secure code for vaults!
+    // My approach is much more secure, and Dr. Evil likes me much better than
+    // Minion #8728.
+    //
+    // -Minion #5620
     public boolean checkPassword(String password) {
         return password.endsWith("{{flag[25:]}}") &&
                password.substring(16, 24).equals("{{flag[16:24]}}") &&

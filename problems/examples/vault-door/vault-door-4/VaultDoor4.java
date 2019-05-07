@@ -13,6 +13,19 @@ class VaultDoor4 {
         }
     }
 
+    // I made myself dizzy converting all of these numbers into different bases,
+    // so I just *know* that this vault will be impenetrable. This will make Dr.
+    // Evil like me better than all of the other minions--especially Minion
+    // #5620--I just know it!
+    //
+    //  .:::.   .:::.
+    // :::::::.:::::::
+    // :::::::::::::::
+    // ':::::::::::::'
+    //   ':::::::::'
+    //     ':::::'
+    //       ':'
+    // -Minion #7781
     public boolean checkPassword(String password) {
         byte[] passBytes = password.getBytes();
         byte[] myBytes = {
